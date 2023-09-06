@@ -3,7 +3,7 @@ import React from 'react';
 export default function Details({ details }) {
 console.log(details)
   return (
-    <main className='main-detail my-20'>
+    <main className='main-detail mt-10'>
       <section>
         <p className='p-3'>
           {details.map((item, index) => {
