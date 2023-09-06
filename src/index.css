@@ -1,13 +1,94 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo-img {
+  @apply h-[35px] w-[47px]
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.menu {
+  @apply flex justify-between
+}
+
+.nav-class {
+  @apply p-5
+}
+
+.round-rect {
+  border-radius: 74px;
+  background: rgba(0, 6, 20, 0.14);
+  font-weight: 200;
+}
+
+.input {
+  @apply text-[15px] outline-none placeholder:text-center py-1 px-3 text-center placeholder:text-[#303030]
+}
+
+.submit {
+  @apply text-[12px] border-[#0c89ff] px-3 py-1 border-2 hover:text-[#6aadff] hover:border-[#1664ad] hover:border-2
+}
+
+
+.location {
+  @apply text-[10px] border-[#0c89ff] border-2 hover:text-[#6aadff] hover:border-[#1664ad] hover:border-2
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.main-detail {
+
+  border-style: solid;
+  border-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(120, 197, 255)) 1;
+  border-radius: 18px;
+
+background: rgba(0, 0, 0, 0.49);
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(5px);
+
+
+}
+
+.main-detail{
+  @apply mx-2
+}
+
+.windImg{
+  @apply w-[100px] h-[100px]
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.extra{
+  padding: 40px;
+  
+  border-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(120, 197, 255)) 1;
+  border-radius: 18px;
+  margin-top: 30px;
+  background: rgba(0, 0, 0, 0.2);
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(7px);
+}
+.latnlong{
+  border-radius: 18px;
+  border-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(120, 197, 255)) 1;
+padding: 20px;
+background: rgba(0, 0, 0, 0.19);
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(7px);
+
 }
